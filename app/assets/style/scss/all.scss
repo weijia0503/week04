@@ -1,0 +1,56 @@
+@import "reset";
+@import "variables";
+
+*{
+    box-sizing: border-box;    
+}
+
+body{
+    font-family: "Roboto","PingFang TC","sans-serif","Arial","微軟正黑體";
+}
+
+img{
+    max-width: 100%;
+}
+
+.header{
+    display: flex;
+    background-color: $main-red;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 48px;
+}
+
+.menu{
+    display: none;
+}
+
+.logo{
+    width: 80px;
+    display: block;
+}
+
+.h-list-area{
+    display: flex;
+    margin: 40px 0;
+
+}
+
+.h-list-box{
+    margin-left: 64px;
+    border-bottom: 2px solid $white;
+    border-color: rgba(0, 0, 0, 0);
+    padding-bottom: 6px;
+    transition: .3s;
+
+    &:hover{
+        border-bottom: 2px solid $white;
+    }
+    a{
+        text-decoration: none;
+        color: $white;
+        font-size: $main-red;
+        line-height: 1.4;
+        display: block;
+    }
+}
